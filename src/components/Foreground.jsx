@@ -8,7 +8,7 @@ function Foreground() {
         {
             id: Date.now(),
             heading: "Welcome !!!",
-            content: "This is your sample note. Create more by clicking on the + icon at the top."
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui quasi magnam sit modi non, voluptate aspernatur ex fuga enim? Repudiandae reiciendis maiores eum, labore necessitatibus laudantium doloribus odit officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas doloribus quidem sunt atque pariatur at tempora fugiat labore, totam facilis! This is your sample note. Create more by clicking on the + icon at the top."
         }
     ]);
     const updateContent = (id, heading, content) => {
