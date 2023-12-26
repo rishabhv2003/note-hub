@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { AiOutlineSave } from 'react-icons/ai';
 import { useData } from '../context/DataContext';
 import { AiOutlineEdit } from "react-icons/ai";
+import { MdOutlineCancel } from "react-icons/md";
 function Card({ reference, card }) {
     const [cardState, setCardState] = useState({
         heading: card.heading,
@@ -75,9 +76,9 @@ function Card({ reference, card }) {
                 <div className='flex items-center justify-between h-[3.5rem]'>
                     <span
                         className='w-8 h-8 text-2xl rounded-full flex items-center justify-center transition duration-300 ease-in-out hover:bg-gray-700 hover:text-white'
-                        onClick={handleDeleteClick}
+                        onClick={isEditing ? handleCancelClick : handleDeleteClick}
                     >
-                        <AiOutlineDelete />
+                        {isEditing ? <MdOutlineCancel /> : <AiOutlineDelete />}
                     </span>
                     <span
                         className='w-8 h-8 text-2xl rounded-full flex items-center justify-center transition duration-300 ease-in-out hover:bg-gray-700 hover:text-white'

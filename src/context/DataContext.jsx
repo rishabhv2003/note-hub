@@ -4,8 +4,8 @@ export const DataContext = createContext({
     cardContents: [
         {
             id: Date.now(),
-            heading: "Your Heading",
-            content: "This is your sample note create more by clicking + icon."
+            heading: "",
+            content: ""
         }
     ],
     updateContent: (id, heading, content) => { },
