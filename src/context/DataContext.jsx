@@ -8,7 +8,8 @@ export const DataContext = createContext({
             content: "This is your sample note create more by clicking + icon."
         }
     ],
-    updateContent: (cardContents) => { },
+    updateContent: (id, heading, content) => { },
+    createContent: (heading, content) => { },
     deleteCard: (id) => { }
 })
 export const useData = () => {
